@@ -9,30 +9,56 @@
 <link rel="stylesheet" href="style.css">
 <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 <link rel="icon" type="image/x-icon" href="icon.png">
+
 <body>
 
     <div id="titleContainer">
-        <h2>Good day,</h2>
-        <h1>Hai Tsung</h1>
+        <h2>Good day, Hai Tsung</h2>
+        <h1 id="clock">08:41</h1>
         <div id="inputContainer">
             <input type="text" id="searchInput" placeholder=" " autocomplete="off">
             <img id="googleLogo" src="googleLogo.png">
         </div>
-    </div>
-
-    <div id="belowTitleContainer">
         <div id="shortcutContainer">
-            <div id="shortcutSubcontainer"><a href="https://www.youtube.com">YouTube</a></div>
-            <div id="shortcutSubcontainer"><a href="https://www.github.com">GitHub</a></div>
-            <div id="shortcutSubcontainer"><a href="">Some link</a></div>
+
         </div>
 
         <div id="shortcutAddContainer">
             <button id="shortcutAddButton">
-                <img id="plusImage" src="plus.png">
+                <img id="iconImage" src="plus.png">
+            </button>
+            <button id="shortcutEditButton">
+                <img id="iconImage" src="edit.png">
             </button>
         </div>
-
+    </div>
+    <div id="popUpArea">
+        <div id="editShortcutsPopup">
+            <p>Edit and Delete Shortcuts</p>
+            <div class="shortcutEditItemContainer">
+                <input type="text">
+                <input type="text">
+                <button> Delete</button>
+            </div>
+            <div class="shortcutEditItemContainer">
+                <input type="text">
+                <input type="text">
+                <button> Delete</button>
+            </div>
+            <div class="shortcutEditItemContainer">
+                <input type="text">
+                <input type="text">
+                <button> Delete</button>
+            </div>
+            <div id="editShortcutsCommit">
+                <button>
+                    discard
+                </button>
+                <button id="editSaveButton">
+                    save
+                </button>
+            </div>
+        </div>
     </div>
 
 
